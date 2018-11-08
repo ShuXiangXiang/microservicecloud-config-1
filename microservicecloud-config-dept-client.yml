@@ -23,9 +23,9 @@ spring:
 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
-  type-aliases-package: cn.ruisiyuan.springcloud.entities   # 所有Entity别名类所在包
+  type-aliases-package: com.xinyan.springcloud.entities     # 所有Entity别名类所在包
   mapper-locations:
-  - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
+  - classpath:mybatis/mapper/*Mapper.xml                    # mapper映射文件
 
 eureka:
   client:
@@ -36,8 +36,8 @@ eureka:
       prefer-ip-address: true
 
 info:
-  app.name: ruisiyuan-microservicecloud-springcloudconfig01
-  company.name: www.ruisiyuan.cn
+  app.name: xinyan-microservicecloud-springcloudconfig01
+  company.name: www.xinyanyuan.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
 ---
@@ -61,9 +61,9 @@ spring:
 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
-  type-aliases-package: cn.ruisiyuan.springcloud.entities   # 所有Entity别名类所在包
+  type-aliases-package: com.xinyan.springcloud.entities     # 所有Entity别名类所在包
   mapper-locations:
-  - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
+  - classpath:mybatis/mapper/*Mapper.xml                       # mapper映射文件
 
 eureka:
   client:
@@ -74,7 +74,7 @@ eureka:
       prefer-ip-address: true
 
 info:
-  app.name: ruisiyuan-microservicecloud-springcloudconfig01
-  company.name: www.ruisiyuan.cn
+  app.name: xinyan-microservicecloud-springcloudconfig01
+  company.name: www.xinyanyuan.cn
   build.artifactId: $project.artifactId$
   build.version: $project.version$
